@@ -1,9 +1,12 @@
 # Crowdstrike_BSOD_Fixer
 
- Batch or PowerShell script designed to delete the C-00000291*.sys file(s) from the CrowdStrike drivers directory (C:\Windows\System32\drivers\CrowdStrike). This script is intended for use in troubleshooting scenarios where the specified file is causing system instability or related issues.
-Features
+Batch or PowerShell script designed to delete the C-00000291*.sys file(s) from the CrowdStrike drivers directory (C:\Windows\System32\drivers\CrowdStrike). This script is intended for use in troubleshooting scenarios where the specified file is causing system instability or related issues.
+ 
+Features:
+
 Administrative Privileges Check: Ensures the script is run with the necessary permissions to modify system files.
 Execution Policy Management: Temporarily sets the PowerShell execution policy to Bypass for the current session to allow script execution.
+
 User Confirmation: Prompts the user for confirmation before proceeding with the deletion of the specified file(s).
 Logging: Records actions and errors to a log file for future reference and troubleshooting.
 Multiple File Handling: Safely handles the deletion of multiple files matching the specified pattern.
